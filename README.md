@@ -1,1 +1,1 @@
-# School Homework for OS, Digital Image Process, Socket A
+# School Homework for OS, Digital Image Process, Socket Application
