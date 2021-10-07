@@ -1,0 +1,9 @@
+在左上角的空白處輸入檔名（必須是存在的檔案加上正確的副檔名），再按open即可開啟。
+save可以儲存當前變更後的圖片為新檔案。
+在gray-level slicing中的lower bound輸入欲選取的灰階值下限、upper bound輸入欲選取的灰階值上限（lower bound須小於upper bound且大於等於0、upper bound須大於lower bound且小於等於255），輸入完按preserve origin value（保留未選取的灰階值）或turn black（將未選取的灰階值變為黑色）即可看選取的灰階值位於圖片的哪些位置（選取範圍內的灰階值會變亮）。
+在bit-plane可選要看0到7哪一個bit-plane，再按右下角的OK以顯示。
+拉動smoothing和sharpening的橫桿可以改變調整圖片的程度。
+FFT可以顯示圖片經過傅立葉轉換後的頻譜。
+UNFFT可以將頻譜變回圖片。
+amplitude image和phase image分別可以顯示振幅和相位角的圖片。
+amplitude image+phase image可以顯示得到振幅和相位角後反傅立葉轉換後的圖片。

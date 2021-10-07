@@ -1,0 +1,11 @@
+part1
+γL和γH調整濾波器範圍，c調整低頻到高頻的斜度，d0調整截止頻率。f(x,y)->ln->fft->H(u,v)->ifft->exp->f'(x,y)，H(u,v)=(γH-γL)*(1-exp((-c)*D(u,v)^2/D0^2))+γL。
+
+part2
+RGB component可以選擇看red component image或green component image或blue component image。
+HSI component可以選擇看hue component image或saturation component image或intensity component image（根據課本Eq.6-16到Eq.6-18可以知道如何將RGB的值換成HSI的值）。
+original image可以變回原本的圖片。
+complement可以將圖片變為原本的補色。
+smoothing利用1/25[[1 1 1 1 1], ... , [1 1 1 1 1]]的mask將圖片平滑化。
+sharpening利用[[0 -1 0], [-1 4 -1], [0 -1 0]]的mask將圖片銳化。
+feather part首先保留有羽毛的矩形區域，利用hue component盡量把不是羽毛的部份去掉，再利用saturation component盡量把不是羽毛的部份去掉，最後將將為hue保留的部份（hue的值不為0）且為saturation保留的部份（saturation的值不為0）按原本的圖片輸出，就是羽毛的部份。
